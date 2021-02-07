@@ -1,0 +1,72 @@
+body {height: 100vh;
+    box-sizing: border-box;
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 30%;
+    height: 65%;
+    border: 3px solid darkgreen;
+    border-radius: 10px;
+    background-color: green; 
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+}
+div {
+    padding: 10px;
+}
+
+.head {
+    border-bottom: 3px solid greenyellow;
+    text-shadow: 1px 1px 1px purple,
+                 -1px 1px 1px yellow;
+}
+.ats {
+    margin-top: 10px;
+    border: 3px solid darkgreen;
+    background-color: #006500;
+}
+button {
+    background-color: greenyellow;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    color: #fff;
+    text-shadow: 1px 1px 1px black;
+    font-size: 20px;
+}
+.nums{
+    margin-top: 10px;
+    padding: 0;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-areas: "ac ac del dal"
+                         "num1 num2 num3 mul"   
+                         "num4 num5 num6 plus"
+                         "num7 num8 num9 min"
+                         "dot num0 eql eql";
+}
+.ac {grid-area: ac;}
+.del {grid-area: del;}
+.dal {grid-area: dal;}
+.num1 {grid-area: num1;}
+.num2 {grid-area: num2;}
+.num3 {grid-area: num3;}
+.mul {grid-area: mul;}
+.num4 {grid-area: num4;}
+.num5 {grid-area: num5;}
+.num6 {grid-area: num6;}
+.plus {grid-area: plus;}
+.num7 {grid-area: num7;}
+.num8 {grid-area: num8;}
+.num9 {grid-area: num9;}
+.min {grid-area: min;}
+.dot {grid-area: dot;}
+.num0 {grid-area: num0;}
+.eql {grid-area: eql;}
